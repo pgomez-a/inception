@@ -1,0 +1,41 @@
+version: "3.3"
+services:
+   nginx:
+      build: ./requirements/nginx/
+      container_name: nginx
+      restart: always
+      ports:
+         - 443:443
+      volumes:
+         - /home/pgomez-a/data/wp_files/:/var/www/html/
+      depends_on:
+         - wordpress
+      networks:
+         - docker-network
+
+   wordpress:
+      build: ./requirements/wordpress/
+      container_name: wordpress
+      restart: always
+      volumes:
+         - /home/pgomez-a/data/wp_files/:/var/www/html/
+      depends_on:
+         - mariadb
+      networks:
+         - docker-network
+
+   mariadb:
+      build: ./requirements/mariadb/
+      container_name: mariadb
+      restart: always
+      volumes:
+         - /home/pgomez-a/data/wp_database/:/var/lib/mysql/
+      networks:
+         - docker-network
+
+networks:
+   docker-network:
+      driver: bridge
+
+volumes:
+   mysql-data:
