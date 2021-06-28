@@ -22,3 +22,7 @@ Moreover, there are also some other differences that could help us to differenci
   <li>Security: since VMs do not share the operating system and there is a strong level of isolation, they are much more secure compared to containers. A container has many risks and vulnerabilities.</li>
   <li>Portability: Docker containers are easy to transport because they don't have separate OSs. A container can be moved to another operating system and can be quickly configured.</li>
 </ul>
+
+### Docker-compose
+As we have seen before, Docker allows us to create our own applications using containers. Today most applications are made by different microservices that all connect together to display the entire application. With docker-compose we can define and share an application between different containers. Thanks to the use of a .yaml file, the services are defined and, with a single command, we will be able to execute the entire application. <br>
+Basically, docker-compose is a powerful tool for deploying applications that need to use different containers to run. By default, docker containers will be isolated from the rest of the system and other containers. However, using compose creates a network to which all the created containers indicated in the .yaml file will belong. In this way communication between containers is allowed.
