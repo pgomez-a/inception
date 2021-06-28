@@ -15,10 +15,10 @@ With Docker we obtain the following advantages:
 </ul>
 
 ### What is the difference between Docker and VMs?
-The main differene between both softwares is that with VMs what you are looking for is to emulate an environment which behaviour will be the same as a computer. However, with Docker you are trying to create the best way to implement you applications by isolating its dependencies from the rest of the system.<br>
+The main difference between a virtual machine and a container is that with VMs what you want is to emulate an environment whose behavior is the same as that of a computer. However, Docker looks for the best way to implement an application by isolating its dependencies from the rest of the system.<br>
 Moreover, there are also some other differences that could help us to differenciate both softwares:
 <ul>
-  <li>Operating System: each VM has its own guest OS, which makes VM slow. Instead, Docker containers shares the same host system, so they are very soft.</li>
-  <li>Security: since the Vm doesn't share the OS and a strength level of isolation exists, they are much more secure if we compare them with containers. A container has a lot of risks and vulnerabilities.</li>
-  <li>Portablity: Docker containers are easy-portable, because they don't have separated OS. A container can be moved to another OS and can be set up quickly.</li>
+  <li>Operating system: each virtual machine has its own guest operating system, which makes the virtual machine slow. Instead, Docker containers share the same host system, so they are very smooth.</li>
+  <li>Security: since VMs do not share the operating system and there is a strong level of isolation, they are much more secure compared to containers. A container has many risks and vulnerabilities.</li>
+  <li>Portability: Docker containers are easy to transport because they don't have separate OSs. A container can be moved to another operating system and can be quickly configured.</li>
 </ul>
