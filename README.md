@@ -34,7 +34,7 @@ Basically, docker-compose is a powerful tool for deploying applications that nee
 With Nginx, we will have for our use:
 <ul>
   <li><b>Reverse proxy:</b> a proxy is a server that works as an intermediary for client-server communication when a client sends a request to a server, all focused on client protection. A reverse proxy is the same as a proxy but focused on server protection. The reverse proxy receives the request from the client and sends it to the server. Then, it receives the response from the server and sends it back to the client, as if the proxy had been in charge of processing the request.</li>
-  <li><b>IPv6</b></li>
+  <li><b>IPv6:</b> <a href="https://github.com/pgomez-a/netwhat">visit <b>Netwhat</b></a></li>
   <li><b>FastCGI support:</b> CGI is a web protocol that allows a web server (HTTP server) to interact with external applications, such as PHP. CGI allows us to display dynamic content on our web server. FastCGI is a CGI enhancement.</li>
   <li><b>Websockets:</b> a socket is an abstract concept that allows two processes to intercommunicate with each other, in a secure and orderly way. The concept of a web server is the same but it is used to refer to the two-way channel that is created between the client and the server.</li>
   <li><b>TLS/SSL:</b> Transport Layer Security, a protocol used to encrypt communications on a network, commonly the Internet.</li>
