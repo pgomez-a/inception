@@ -39,3 +39,6 @@ With Nginx, we will have for our use:
   <li><b>Websockets:</b> a socket is an abstract concept that allows two processes to intercommunicate with each other, in a secure and orderly way. The concept of a web server is the same but it is used to refer to the two-way channel that is created between the client and the server.</li>
   <li><b>TLS/SSL:</b> Transport Layer Security, a protocol used to encrypt communications on a network, commonly the Internet.</li>
 </ul>
+
+### What is PHP-FPM?
+Once we have seen what FastCGI is, we know that we will have to use FastCGI on our web server if we want to offer dynamic content. However, instead of using FastCGI we are going to use **PHP-FPM (FastCGI Process Manager)** which is an alternative implementation for PHP-FastCGI with additional features that make it more useful to use in our project. The main reason to use PHP-FPM is that it has been designed to be implemented on high traffic web servers. Since Nginx has the same purpose, we should combine both to get a powerful server using all the advantages that both have.
