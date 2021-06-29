@@ -42,3 +42,58 @@ With Nginx, we will have for our use:
 
 ### What is PHP-FPM?
 Once we have seen what FastCGI is, we know that we will have to use FastCGI on our web server if we want to offer dynamic content. However, instead of using FastCGI we are going to use **PHP-FPM (FastCGI Process Manager)** which is an alternative implementation for PHP-FastCGI with additional features that make it more useful to use in our project. The main reason to use PHP-FPM is that it has been designed to be implemented on high traffic web servers. Since Nginx has the same purpose, we should combine both to get a powerful server using all the advantages that both have.
+
+### What is MariaDB?
+MariaDB is a database management system used to create, modify, and obtain information from a database. It also has other functionalities such as user management and data restoration in the event of a program crash. The most useful commands that we can find with MariaDB are:
+
+- Show all users in the mysql database:
+
+      select * from msyql.user;
+
+- Delete a user:
+
+      delete from mysq.user where user = 'username';
+      
+- Change user name:
+
+      update mysql.user set user="new-username" where user = "old-username"; 
+
+- Add a new user with specific privileges:
+
+      grant select, insert, update, delete, create, drop, index, alter on db_name.* TO 'username'@'localhost' identified by 'password';
+
+- Change user password:
+
+      update mysql.user set password=oldpass("password") where user='username';
+
+- Delete user:
+
+      delete from mysql.user whre user="username";
+
+- Show all databases:
+
+      show databases;
+
+- Use a specific database:
+
+      use db_name;
+
+- Create a database:
+
+      create database db_name;
+
+- Delete a database:
+
+      drop database db_name;
+
+- Show all tables of a database:
+
+      show tables;
+
+- Show data of a specific table:
+
+      select * from table_name;
+
+- Drop table from a database:
+
+      drop table table_name;
