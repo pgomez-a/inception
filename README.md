@@ -16,6 +16,16 @@ With Docker we obtain the following advantages:
   <li><b>Rapid deployment:</b> with a container for each process, all processes can be quickly delivered to different applications</li>
 </ul>
 
+#### Docker Volumes
+A Docker volume is a **space on the host** where all the **data contained in a container is stored**, so in case the container is deleted we will still have all the information that the container has stored during its execution. Without volumes, when you delete a container, all the information it contains is deleted. When we use volumes, we say that we are mounting a directory or a file from our host in a part of the container that was just launched.<br>
+When it comes to volumes, we have two alternatives:
+<ul>
+  <li><b>Data volumes:</b> created in the /var/lib/docker/ file and can be shared between different containers.</li>
+  <li><b>Mounted volumes:</b> the same as a data volume but now we specify the path where the volume will be stored.</li>
+</ul>
+
+#### Docker Network
+
 ### What is the difference between Docker and VMs?
 The main difference between a virtual machine and a container is that with VMs what you want is to emulate an environment whose behavior is the same as that of a computer. However, Docker looks for the best way to implement an application by isolating its dependencies from the rest of the system.<br>
 Moreover, there are also some other differences that could help us to differenciate both softwares:
