@@ -25,6 +25,12 @@ When it comes to volumes, we have two alternatives:
 </ul>
 
 #### Docker Network
+Since we want to set up a **server made by different containers**, we have to find a way to communicate to all of our containers so that they can communicate with each other. This is when we discovered the concept of the Docker network. By default, Docker comes with three types of networks:
+<ul>
+  <li><b>Bridge:</b> to intercommunicate containers.</li>
+  <li><b>Host:</b> removes the isolation between the container and the Docker host.</li>
+  <lis><b>None:</b> the container is not accessible.</li>
+</ul>
 
 ### What is the difference between Docker and VMs?
 The main difference between a virtual machine and a container is that with VMs what you want is to emulate an environment whose behavior is the same as that of a computer. However, Docker looks for the best way to implement an application by isolating its dependencies from the rest of the system.<br>
