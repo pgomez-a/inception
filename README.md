@@ -113,3 +113,6 @@ MariaDB is a database management system used to create, modify, and obtain infor
 - Drop table from a database:
 
       drop table table_name;
+### PID1 & Daemons
+A daemon is a **process that is running in the background**, which **users cannot interactively control** because there is no interface that allows it. Daemons are usually released by the system during startup. The main purpose of daemons is to provide services to other programs.<br>
+Since our Docker container will terminate when the invoked process ends, if we want to keep our container running, it will have to run a daemon so that it never stops. If for some reason the daemon ends, our container will stop.
