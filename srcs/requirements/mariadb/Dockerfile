@@ -1,4 +1,4 @@
-FROM		debian:10.8
+FROM		debian:buster
 
 RUN		apt update
 RUN		apt -y upgrade
