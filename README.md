@@ -1,7 +1,7 @@
 # inception
 <img width="1350" alt="inception" src="https://user-images.githubusercontent.com/74931024/124145398-0b507c00-da8d-11eb-9141-ade99026e392.png">
 
-**If you want to learn more about IT topics, visit my website:** [**IA Notes**](https://ia-notes.com/)
+**If you want to learn more about IT topics, [I invite you to join my Patreon channel](https://www.patreon.com/pgomeza) and visit my website:** [**IA Notes**](https://ia-notes.com/)
 
 Similar to the [**ft_server project**](https://github.com/pgomez-a/ft_server), Inception invites us to make a **web server composed of different services** and using our own **Docker images** (one for each service). All services used to launch the server will be isolated in their own container and, once the server is up, they will connect to the same network. If you do not know ft_server, I recommend you to do it before starting Inception, because it covers many of the concepts we see in Inception but without having to experiment with more difficult topics like docker-compose.
 
